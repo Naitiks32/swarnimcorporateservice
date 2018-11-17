@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>CSS3_clarity</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600|Source+Code+Pro" rel="stylesheet" />
+		<!--[if lte IE 8]><script src="html5shiv.js" type="text/javascript"></script><![endif]-->
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>		
+		<script src="js/skel.min.js">
+		{
+			prefix: 'css/style',
+			preloadStyleSheets: true,
+			resetCSS: true,
+			boxModel: 'border',
+			grid: { gutters: 30 },
+			breakpoints: {
+				wide: { range: '1200-', containers: 1140, grid: { gutters: 50 } },
+				narrow: { range: '481-1199', containers: 960 },
+				mobile: { range: '-480', containers: 'fluid', lockViewport: true, grid: { collapse: true } }
+			}
+		}
+		</script>
+		<script>
+			$(function() {
+
+				// Note: make sure you call dropotron on the top level <ul>
+				$('#main-nav > ul').dropotron({ 
+					offsetY: -10 // Nudge up submenus by 10px to account for padding
+				});
+
+			});
+		</script>
+		<script>
+			// DOM ready
+			$(function() {
+    
+			// Create the dropdown base
+			$("<select />").appendTo("nav");
+   
+			// Create default option "Go to..."
+			$("<option />", {
+				"selected": "selected",
+				"value"   : "",
+				"text"    : "Menu"
+			}).appendTo("nav select");
+   
+			// Populate dropdown with menu items
+			$("nav a").each(function() {
+			var el = $(this);
+			$("<option />", {
+				"value"   : el.attr("href"),
+				"text"    : el.text()
+			}).appendTo("nav select");
+			});
+   
+			// To make dropdown actually work
+			// To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+			$("nav select").change(function() {
+				window.location = $(this).find("option:selected").val();
+			});
+  
+			});
+		</script>	
+	</head>
+	<body>
+	
+		<div id="header_container">		
+		    <div class="container">
+			<!-- Header -->
+				<div id="header" class="row">
+					<div class="6u">
+						<div class="box">
+							<h1><a href="index.html">  Swarnim Corporate Service
+								<span class="header_colour"></span></a></h1>
+							<h2></h2>
+					    </div>
+					</div>
+					<nav id="main-nav" class="6u">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a  href="#">Our Services</a>
+								<ul>	
+									<li><a href="industriesService.html">Industries Supporting Services</a></li>
+									<li><a href="sezService.html">SEZ Consulting Services</a> </li>
+									<li><a href="tradingActivity.html">Trading Activity</a> </li>
+								</ul>
+							</li>
+							<li><a  class="active"  href="apage.html">About Us</a></li>
+							<li>
+								<a href="#">Contact Us</a>			
+									<ul>
+										<li><a href="#">sez.swarnimcorporate@gmail.com</a></li>
+									</ul>
+							</li> 
+<!-- 							<li><a href="contact.php">Contact</a></li> -->
+						</ul>
+					</nav>
+				</div>
+			</div>	
+        </div>		
+
+		<!-- Banner -->		
+		<div id="banner_wrapper">	
+			<div class="container">					
+				<div id="banner">
+<!-- 					<a href="#"><img src="images/banner.jpg" alt="banner image" /></a> -->
+				</div>	
+            </div>	
+        </div>			
+		
+		<div id="site_content">		
+			<div class="container">			
+				
+			<!-- Features -->
+				<div class="row">
+					<section class="8u">
+						<h2>As name “Swarnim” itself means valuable</h2>
+						<p>We believer in philosophy that noting is free in this world and everything is valuable in this world </p>
+						<p>We began our endeavor and professional journey to deliver “Swarnim Corporate Service” to Corporate World fulfilling their requirement which provides them values for money and 
+						<p>Our Services includes not only includes inception to implementation but also accompanying to Corporate World for sustainable, continues growth by providing competitive growth.</p>
+							
+						<p>Our professional expertise is in SEZ (Special Economic Zone). May it be Develop SEZ, Setting up Unit in SEZ / Co-developer.</p> 
+						
+						<p>We also deal in trading and export of Stationery, Handicraft items.</p>
+
+						<p>Our major professional services include;</p>
+					<h5> <p>A. For Student and Entrepreneur</p></h5>
+						<p> &nbsp;&nbsp;		1.Welcome with or without ideas to enter in Corporate World</p>
+
+					<h5> 	<p> B. For Industries and Corporate World </p></h5>
+						<p>	&nbsp;&nbsp;	1. Identification of Project land to Possession by completing </p>
+						<p>	&nbsp;&nbsp;	2. Welcome with ideas or without ideas to enter in Corporate World</p>
+						<p>	&nbsp;&nbsp;	3. Identification of Project land to Possession by completing </p>
+						<p>	&nbsp;&nbsp;	4. Obtain approval, license  from local and Govt. department under one roof</p>
+						<p>	&nbsp;&nbsp;	5. Business Tie up </p>
+						<p>	&nbsp;&nbsp;	6. Material management for buying desired quality product at competitive price</p>
+						<p>	&nbsp;&nbsp;	7. Resources Management resulting efficient productivity and smooth function which includes recruitment of suitable candidate, training & Development , motivational seminar</p>  
+						<p>	&nbsp;&nbsp;	8. Real Logistics Management </p>
+						<p>	&nbsp;&nbsp;	9. Post project implementation Support, monitoring </p>
+					<h5>	<p>C.For Society </p></h5>
+						<p>1. Competent for Corporate Social Responsibility (CSR) planning and implementation</p> 
+						<p>2. Customized Services etc. </p> 
+<!-- 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+<!-- 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+<!-- 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+<!-- 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+<!-- 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+					</section>
+
+					
+					<!-- <section class="4u">
+						<div id="sidebar">
+							<section class="12u">
+								<h3>Latest News</h3>
+								<h4>New Website Launched</h4>
+								<h5>August 1st, 2014</h5>
+								<p>2014 sees the redesign of our website. <a href="#">Read more</a></p>
+							</section>
+							<section class="12u">
+								<h3>Useful Links</h3>
+								<ul>
+									<li><a href="#">First Link</a></li>
+									<li><a href="#">Another Link</a></li>
+									<li><a href="#">And Another</a></li>
+									<li><a href="#">Last One</a></li>
+								</ul>
+							</section>
+							<section class="12u">
+								<h3>More Useful Links</h3>
+								<ul>
+									<li><a href="#">First Link</a></li>
+									<li><a href="#">Another Link</a></li>
+									<li><a href="#">And Another</a></li>
+									<li><a href="#">Last One</a></li>
+								</ul>
+							</section>
+						</div>
+					</section>
+					 -->
+				</div>
+		    </div>
+		</div>		
+		<div id="footer_container">
+						<div class="container">			
+			<!-- Footer -->
+				<footer>
+<!-- 					<p><img src="images/twitter.png" alt="twitter" />&nbsp;<img src="images/facebook.png" alt="facebook" />&nbsp;<img src="images/rss.png" alt="rss" /></p> -->
+					<p><a href="index.html">Home</a> | <a href="industriesService.html">Our Services</a> | <a href="apage.html">About Us</a> | <a href="contact.php">Contact Us</a></p>
+<!-- 					<p>Copyright &copy; CSS3_clarity | <a href="http://fotogrph.com/">Images</a> | <a href="http://skeljs.org/">skel.js</a> | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p> -->
+				</footer>		
+			</div>	
+        </div>		
+	</body>
+</html>
